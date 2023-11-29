@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/275d3dcd53.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+#banner {
+  height: 100vh;
+  background: linear-gradient(rgba(36, 58, 36, 0.3), #17beae),
+    url(./woman-having-her-hair-washed-salon.jpg);
+  background-position: center;
+  background-size: cover;
+  background-position: top;
+}
+.logo {
+  width: 80px;
+  position: absolute;
+  top: 4%;
+  left: 10%;
+}
+.banner_text {
+  text-align: center;
+  color: #fff;
+  padding-top: 170px;
+}
+.banner_text h1 {
+  font-size: 110px;
+  font-family: "kaushan Script", cursive;
+}
+.banner_text p {
+  margin-top: 14px;
+  font-size: 20px;
+  font-style: italic;
+}
+.banner_btn {
+  margin: 50px auto 0;
+}
+.banner_btn a {
+  width: 130px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 10px;
+  padding: 12px 0;
+  font-size: 15px;
+  color: #fff;
+  border: 0.5px solid;
+  position: relative;
+  z-index: 1;
+}
+.banner_btn a span {
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #fff;
+  z-index: -1;
+  transition: 0.5s;
+}
+.banner_btn a:hover span {
+  width: 100%;
+}
+.banner_btn a:hover {
+  color: #000;
+}
+
+#side_nav {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #17beae;
+  padding-top: 80px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-top-left-radius: 10px;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+#side_nav a {
+  display: block;
+  color: white;
+  padding: 15px;
+  text-decoration: none;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+
+#side_nav a:hover {
+  background-color: #ffffff;
+  color: #000;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 45px 23px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+}
+#mnu_btn {
+  width: 40px;
+  height: 40px;
+  background: #dbdbdb;
+  text-align: center;
+  position: fixed;
+  top: 45px;
+  right: 60px;
+  cursor: pointer;
+  z-index: 3;
+  border-radius: 4px;
+  font-size: 28px;
+  margin-top: 15px;
+  color: #17beae;
+}
+@media screen and (max-width: 770px) {
+  .banner_text {
+    padding-top: 280px;
+  }
+  .banner_text h1 {
+    font-size: 44px;
+  }
+  .banner_btn a {
+    display: block;
+    margin: 25px auto;
+  }
+}
+
+/* feature */
+#feature {
+  width: 100%;
+  padding: 70px 0;
+}
+.ttl_txt {
+  text-align: center;
+  padding-bottom: 40px;
+}
+.ttl_txt p {
+  font-size: 22px;
+  font-weight: 700;
+  margin: auto;
+  color: #17beae;
+}
+.ttl_txt h2 {
+  font-size: 50px;
+}
+
+.fe_b {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.f {
+  flex-basis: 50%;
+  color: #17beae;
+}
+
+.f_img {
+  flex-basis: 50%;
+  margin-bottom: auto;
+}
+.f_img img {
+  width: 44%;
+  border-radius: 10px;
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.4);
+}
+.f h2 {
+  text-align: left;
+  margin-bottom: 20px;
+  color: #009688;
+  font-weight: 200;
+}
+.f_d {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.f_icon .fa-brands {
+  width: 35px;
+  height: 35px;
+  font-size: 26px;
+  line-height: 35px;
+  border-radius: 10px;
+  color: #009688;
+  border: 1px solid #009688;
+}
+.fa-solid {
+  width: 35px;
+  height: 35px;
+  font-size: 26px;
+  line-height: 36px;
+  border-radius: 10px;
+  color: #009688;
+  border: 1px solid #009688;
+}
+.f_txt {
+  padding: 0 20px;
+  text-align: initial;
+  color: #000;
+}
+@media screen and (max-width: 770px) {
+  .ttl_txt h2 {
+    font-size: 35px;
+  }
+  .f {
+    flex-basis: 100%;
+  }
+  .f_img {
+    flex-basis: 100%;
+  }
+  .f_img img {
+    width: 100%;
+  }
+}
+
+/* Services */
+#services {
+  width: 100%;
+  padding: 70px 0;
+  background: #efefef;
+}
+.ser_box {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+}
+.sngl_ser {
+  flex-basis: 48%;
+  text-align: center;
+  border-radius: 7px;
+  margin-bottom: 30px;
+  color: #fff;
+  position: relative;
+}
+.sngl_ser img {
+  width: 100%;
+  border-radius: 7px;
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.4);
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  border-radius: 7px;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), #009888);
+  opacity: 0;
+  transition: 1s;
+  cursor: pointer;
+}
+.sngl_ser:hover .overlay {
+  opacity: 1;
+}
+.ser_desc {
+  width: 80%;
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.7s;
+}
+.ser_desc h3 {
+  font-size: 16px;
+}
+hr {
+  width: 60%;
+  background: #fff;
+  border: 0;
+  height: 3px;
+  margin: 15px auto;
+}
+.ser_desc p {
+  font-size: 14px;
+}
+.sngl_ser:hover .ser_desc {
+  bottom: 40%;
+  opacity: 1;
+}
+@media screen and (max-width: 770px) {
+  .sngl_ser {
+    flex-basis: 100%;
+  }
+  .ser_desc p {
+    font-size: 12px;
+  }
+  hr {
+    margin: 5px auto;
+  }
+  .ser_desc h3 {
+    font-size: 14px;
+  }
+  .sngl_ser:hover .ser_desc {
+    bottom: 30% !important;
+  }
+}
+
+/* Review Section */
+#c_r {
+  width: 100%;
+  padding: 70px 0;
+}
+.r_box {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: auto;
+}
+.r_col {
+  flex-basis: 29%;
+  padding: 12px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  box-shadow: 0 10px 20px 3px #00968814;
+  transition: transform 0.5s;
+  cursor: pointer;
+}
+.r_col:hover {
+  transform: translateY(-8px);
+}
+.r_col p {
+  font-size: 14px;
+  font-weight: 100;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+.user img {
+  width: 55px;
+  margin-right: 15px;
+  border-radius: 7px;
+}
+.user_info h4 {
+  font-size: 13px;
+}
+.user_info .fa {
+  margin-left: 10px;
+  color: #27c0ff;
+  font-size: 20px;
+}
+.user_info small {
+  color: #009688;
+  font-size: 10px;
+}
+@media screen and (max-width: 770px) {
+  .r_col {
+    flex-basis: 100%;
+  }
+}
+
+#gallery {
+  width: 100%;
+  padding: 70px 0;
+}
+
+.g_box {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: auto;
+}
+.g_img {
+  flex-basis: 33%;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+.g_img img {
+  width: 290px;
+  border-radius: 7px;
+  box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 770px) {
+  .g_img {
+    flex-basis: 100%;
+  }
+}
+/* footer */
+
+#footer {
+  background: #efefef;
+  padding: 100px 0 20px;
+  position: relative;
+}
+.footer_row {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer_left,
+.footer_right {
+  flex-basis: 45%;
+  padding: 12px;
+  margin-bottom: 20px;
+}
+.footer_right {
+  text-align: right;
+}
+.footer_row h1 {
+  margin: 20px 0;
+}
+.footer_row p {
+  line-height: 20px;
+}
+.footer_left .fa,
+.footer_right .fa {
+  font-size: 12px;
+  color: #17beae;
+  margin: 10px;
+}
+.ff_img {
+  max-width: 200px;
+  opacity: 0.1;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.s_links {
+  text-align: center;
+}
+.s_links .fa {
+  height: 35px;
+  width: 35px;
+  line-height: 35px;
+  font-size: 20px;
+  border: 1px solid #009688;
+  margin: 40px 5px 0;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.s_links .fa:hover {
+  background-color: #009688;
+  color: #fff;
+  transform: translateY(-7px);
+}
+@media screen and (max-width: 770px) {
+  .footer_left,
+  .footer_right {
+    flex-basis: 100%;
+    font-size: 10px;
+  }
+
+  .ff_img {
+    top: 20%;
+  }
+}
+
+/* container */
+.contact_us {
+  width: 100%;
+  padding: 70px 0;
+  
+}
+.container {
+  display: flex;
+
+  width: 80%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.c_info {
+  flex-basis: 50%;
+  margin:  90px 0;
+}
+.box {
+  display: flex;
+ 
+}
+
+.txt {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 20px;
+  padding: 20px 0;
+}
+.txt h4 {
+  font-size: 14px;
+  font-weight: 600;
+  padding-bottom: 4px;
+  color: #009888;
+}
+.txt p {
+  font-size: 13;
+}
+.icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 2px 1px 2px rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0;
+  font-size: 16px;
+  color: #009688;
+  cursor: pointer;
+  transition: 0.6s;
+}
+.icon:hover{
+  background: #009688;
+  color: #fff;
+}
+.c_form {
+  flex-basis: 50%;
+}
+.fr {
+  width: 80%;
+  margin: 25px 50px;
+  padding: 40px;
+ background: #fff;
+ box-shadow: 2px 5px 10px rgba(0,0,0,0.4);
+}
+form h2 {
+  font-size: 25px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.i_box {
+  width: 100%;
+  position: relative;
+  margin-top: 10px;
+}
+.i_box input,
+.i_box textarea {
+  resize: none;
+  width: 100%;
+  padding: 5px 0;
+  margin: 10px 0;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+}
+.i_box span {
+  position: absolute;
+  left: 0;
+  padding: 4px 0;
+  margin: 10px 0;
+  font-size: 16px;
+  pointer-events: none;
+  color: #555;
+  transition: 0.5s;
+}
+ input:focus ~ span,
+ input:valid ~ span,
+ .i_box textarea:focus ~ span,
+ .i_box textarea:valid ~ span{
+  color:rgb(137, 4, 57);
+  font-size: 12px;
+  transform: translateY(-20px);
+}
+.i_box input[type="submit"]{
+  width: 120px;
+  color: #fff;
+  background: #009688;
+  border: none;
+  padding: 10px;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 7px;
+}
+@media screen and (max-width: 770px) {
+  .c_info {
+    flex-basis: 100%;
+  }
+  .c_form {
+    flex-basis: 100%;
+  }
+  .fr {
+   margin: auto;
+    width: 100%;
+  }
+  .i_box input[type="submit"]{
+    width: 100%;
+  }
+}
+
+  </style>
+  </head>
+  <body>
+    <section id="banner">
+      <img
+        class="logo"
+        src="https://pullmeupp.com/wp-content/uploads/2023/03/cropped-cropped-%E0%B2%A8%E0%B2%BF%E0%B2%AE%E0%B3%8D%E0%B2%AE-%E0%B2%AE%E0%B2%A8%E0%B3%86-%E0%B2%A8%E0%B2%AE%E0%B3%8D%E0%B2%AE-%E0%B2%9C%E0%B2%B5%E0%B2%BE%E0%B2%AC%E0%B3%8D%E0%B2%A6%E0%B2%BE%E0%B2%B0%E0%B2%BF-1-81x76.png"
+        alt=""
+      />
+      <div class="banner_text">
+        <h1 class="tt">Pull Me Upp</h1>
+        <p>Style is your hair is style your life</p>
+        <div class="banner_btn">
+          <a href="https://share.hsforms.com/1cW6a9dp7RC6CtoJOTE-e2Adeua5"
+            ><span></span>Book Now</a
+          >
+          <a href="#footer"><span></span>About Us</a>
+        </div>
+      </div>
+    </section>
+    <div id="side_nav">
+      <nav>
+        <ul>
+          <li>
+            <a href="#banner">Home</a>
+          </li>
+          <li><a href="#feature">Features</a></li>
+          <li><a href="#services">Services</a></li>
+          <li>
+            <a href="https://share.hsforms.com/1cW6a9dp7RC6CtoJOTE-e2Adeua5"
+              >Book Now</a
+            >
+          </li>
+          <li><a href="#c_r">Customer Review</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#footer">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="mnu_btn">
+      <i id="menu" class="fa-solid fa-bars"></i>
+    </div>
+    <!-- Feature Section Start -->
+
+    <section id="feature">
+      <div class="ttl_txt">
+        <p>Features</p>
+        <h2>Lorem ipsum dolor sit.</h2>
+      </div>
+      <div class="fe_b">
+        <div class="f">
+          <h2>Loremipsum dolor.</h2>
+          <div class="f_d">
+            <div class="f_icon">
+              <i class="fa-brands fa-google"></i>
+            </div>
+            <div class="f_txt">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+                temporibus illo, quidem at explicabo cupiditate!
+              </p>
+            </div>
+          </div>
+          <h2>Online Booking</h2>
+          <div class="f_d">
+            <div class="f_icon">
+              <i class="fa-brands fa-slack"></i>
+            </div>
+            <div class="f_txt">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+                temporibus illo, quidem at explicabo cupiditate!
+              </p>
+            </div>
+          </div>
+          <h2>Loremipsum dolor.</h2>
+          <div class="f_d">
+            <div class="f_icon">
+              <i class="fa-solid fa-indian-rupee-sign"></i>
+            </div>
+            <div class="f_txt">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+                temporibus illo, quidem at explicabo cupiditate!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="f_img">
+          <img
+            src="https://img.freepik.com/free-photo/smiling-female-owner-hairdresser-salon_329181-1937.jpg?size=626&ext=jpg&ga=GA1.1.1577412790.1700629832&semt=ais"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature Section End -->
+
+    <!-- Services -->
+    <section id="services">
+      <div class="ttl_txt">
+        <p>Services</p>
+        <h2>Our Services is best</h2>
+      </div>
+      <div class="ser_box">
+        <div class="sngl_ser">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1661507233081-76acef756813?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHNhbG9ufGVufDB8fDB8fHww"
+            alt=""
+          />
+          <div class="overlay"></div>
+          <div class="ser_desc">
+            <h3>Beard Set</h3>
+            <hr />
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi a,
+              omnis tenetur unde qui fugiat fuga sunt labore ipsa dolores!
+            </p>
+          </div>
+        </div>
+        <div class="sngl_ser">
+          <img
+            src="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c2Fsb258ZW58MHx8MHx8fDA%3D"
+            alt=""
+          />
+          <div class="overlay"></div>
+          <div class="ser_desc">
+            <h3>Hair Set</h3>
+            <hr />
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi a,
+              omnis tenetur unde qui fugiat fuga sunt labore ipsa dolores!
+            </p>
+          </div>
+        </div>
+        <div class="sngl_ser">
+          <img
+            src="https://images.unsplash.com/photo-1559599076-9c61d8e1b77c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzB8fHNhbG9ufGVufDB8fDB8fHww"
+            alt=""
+          />
+          <div class="overlay"></div>
+          <div class="overlay"></div>
+          <div class="ser_desc">
+            <h3>Hair Cuting</h3>
+            <hr />
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi a,
+              omnis tenetur unde qui fugiat fuga sunt labore ipsa dolores!
+            </p>
+          </div>
+        </div>
+        <div class="sngl_ser">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1661768233835-fd3d1d0ca08a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODl8fHNhbG9ufGVufDB8fDB8fHww"
+            alt=""
+          />
+          <div class="overlay"></div>
+          <div class="ser_desc">
+            <h3>Hair Stylish</h3>
+            <hr />
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi a,
+              omnis tenetur unde qui fugiat fuga sunt labore ipsa dolores!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Review Section -->
+    <section id="c_r">
+      <div class="ttl_txt">
+        <p>Services Review</p>
+        <h2>Customer Review</h2>
+      </div>
+      <div class="r_box">
+        <div class="r_col">
+          <div class="user">
+            <img
+              src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1200/lsci/db/PICTURES/CMS/103400/103490.jpg"
+              alt=""
+            />
+            <div class="user_info">
+              <h4>Albie Morkel <i class="fa fa-twitter"></i></h4>
+              <small>@morkel.com</small>
+            </div>
+          </div>
+          <p>
+            Johannes Albertus Morkel (born 10 June 1981), better known as Albie
+            Morkel, is a former South African cricketer. He is an all-rounder
+            who bowls right-arm medium fast and bats left-handed. He was
+            earmarked as the new Lance Klusener from an early age and is famous
+            for his six hitting abilities
+          </p>
+        </div>
+
+        <div class="r_col">
+          <div class="user">
+            <img
+              src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_320,q_50/lsci/db/PICTURES/CMS/320300/320371.png"
+              alt=""
+            />
+            <div class="user_info">
+              <h4>Jonty Rhodes <i class="fa fa-twitter"></i></h4>
+              <small>@morkel.com</small>
+            </div>
+          </div>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste atque
+            consectetur sapiente in sit ipsum quae officia dolor. Totam, harum.
+            Enim nisi fuga autem, sunt quos modi cupiditate exercitationem
+            quaerat nulla
+          </p>
+        </div>
+        <div class="r_col">
+          <div class="user">
+            <img
+              src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202301/david_miller_ap-three_four.jpg?VersionId=pB00lM9cSNgmokMAcCr2Domwzc1A.7Vp"
+              alt=""
+            />
+            <div class="user_info">
+              <h4>David Miller <i class="fa fa-twitter"></i></h4>
+              <small>@D_miller </small>
+            </div>
+          </div>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste atque
+            consectetur sapiente in sit ipsum quae officia dolor. Totam, harum.
+            Enim nisi fuga autem, sunt quos modi cupiditate exercitationem
+            quaerat nulla rem eligendi, blanditiis consequuntur non voluptas in
+            at explicabo ea ipsam! Rerum ipsa quam, ducimus possimus obcaecati
+            cumque explicabo.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <div class="ttl_txt">
+        <p>Gallery</p>
+        <h2>Our Work</h2>
+      </div>
+
+      <div class="g_box">
+        <div class="g_img">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1664301489002-2fed4596c101?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c2Fsb258ZW58MHx8MHx8fDA%3D"
+            alt=""
+          />
+        </div>
+        <div class="g_img">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1664301489002-2fed4596c101?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c2Fsb258ZW58MHx8MHx8fDA%3D"
+            alt=""
+          />
+        </div>
+        <div class="g_img">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1664301489002-2fed4596c101?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c2Fsb258ZW58MHx8MHx8fDA%3D"
+            alt=""
+          />
+        </div>
+
+        <div class="g_img">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1664301489002-2fed4596c101?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c2Fsb258ZW58MHx8MHx8fDA%3D"
+            alt=""
+          />
+        </div>
+        <div class="g_img">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1664301489002-2fed4596c101?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c2Fsb258ZW58MHx8MHx8fDA%3D"
+            alt=""
+          />
+        </div>
+        <div class="g_img">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1664301489002-2fed4596c101?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c2Fsb258ZW58MHx8MHx8fDA%3D"
+            alt=""
+          />
+        </div>
+        <div class="g_img">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1664301489002-2fed4596c101?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c2Fsb258ZW58MHx8MHx8fDA%3D"
+            alt=""
+          />
+        </div>
+        <div class="g_img">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1664301489002-2fed4596c101?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c2Fsb258ZW58MHx8MHx8fDA%3D"
+            alt=""
+          />
+        </div>
+        <div class="g_img">
+          <img src="" alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="contact_us">
+      <div class="ttl_txt">
+        <p>Contact Us</p>
+      </div>
+      <div class="container">
+       <div class="c_info">
+        <div class="box">
+          <div class="icon"><i class="fa fa-location"></i></div>
+          <div class="txt">
+            <h4>Address</h4>
+            <p>#456 mico lay out btm 2nd stage 7th main road</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icon"><i class="fa fa-phone"></i></div>
+          <div class="txt">
+            <h4>Phone</h4>
+            <p>+91 988 5454 868</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icon"><i class="fa fa-message"></i></div>
+          <div class="txt">
+            <h4>Email</h4>
+            <p>@pullme.com</p>
+          </div>
+        </div>
+
+       </div>
+       <div class="c_form">
+        <div class="fr">
+        <form>
+          <h2>send message</h2>
+          <div class="i_box">
+            <input type="text" name="" required="required">
+            <span>Full Name</span>
+          </div>
+          <div class="i_box">
+            <input type="email" name="" required="required">
+            <span>Email</span>
+          </div>
+          <div class="i_box">
+            <textarea required="required"></textarea>
+            <span>Send Your Message</span>
+          </div>
+          <div class="i_box">
+           <input type="submit" name="" value="Send">
+          </div>
+        </form>
+       </div>
+      </div>
+    </section>
+    <section id="footer">
+      <img
+        src="https://img.freepik.com/free-vector/man-s-hair-style_23-2147523791.jpg?w=740&t=st=1700633356~exp=1700633956~hmac=fdce6bf5de34db4be3b0404c3f8cf9994b6b8aef24b088547063acc80ab2a00a"
+        alt=""
+        class="ff_img"
+      />
+      <div class="ttl_txt">
+        <p>Contact</p>
+        <h2>Visit Shop Today</h2>
+      </div>
+      <div class="footer_row">
+        <div class="footer_left">
+          <h1>Opening Hours</h1>
+          <p><i class="fa fa-clock-o"></i>Monday to Friday 9am to 10pm</p>
+          <p><i class="fa fa-clock-o"></i>Saturday to Sunday 8am to 10pm</p>
+        </div>
+        <div class="footer_right">
+          <h1>Get In Touch</h1>
+          <p>
+            #456 Btm scand stage opposite marigold hospital<i
+              class="fa fa-map-marker"
+            ></i>
+          </p>
+          <p>+91 865-87564-56 <i class="fa fa-phone"></i></p>
+          <p>pullmeupp.com <i class="fa fa-paper-plane"></i></p>
+        </div>
+      </div>
+      <div class="s_links">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-youtube"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-twitter"></i>
+      </div>
+    </section>
+
+    <script>
+      var mnubtn = document.getElementById("mnu_btn");
+      var sidenav = document.getElementById("side_nav");
+
+      mnubtn.onclick = function () {
+        if (sidenav.style.right === "-250px") {
+          sidenav.style.right = "0";
+          mnubtn.innerHTML = "&#10005;"; // Change the menu button to a close icon
+        } else {
+          sidenav.style.right = "-250px";
+          mnubtn.innerHTML = "&#9776;"; // Change the menu button back to the hamburger icon
+        }
+      };
+      var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 500,
+        speedAsDuration: true,
+      });
+    </script>
+  </body>
+</html>
